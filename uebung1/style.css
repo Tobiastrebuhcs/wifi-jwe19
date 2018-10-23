@@ -1,0 +1,85 @@
+body {
+font-size: 24px;
+line-height: 1.5em;
+
+}
+
+h1 {
+  font-size: 48px;
+  font-family: "segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+.highlight {
+  font-size: 75px; !important;
+}
+
+
+#MyID_Content_123 {
+  border: 20px solid orange;
+}
+
+.multiline {
+background: rgba(0,0,255,0.1);
+color: #33ff88;
+border-bottom: 3px dotted #000;
+}
+
+.meinrechteck {
+width: 300px;
+height: 200px;
+background: red;
+
+position: fixed;
+top: 680px;
+right: 50px;
+}
+
+.meinrechteck2 {
+width: 300px;
+height: 150px;
+background: yellow;
+
+
+position: fixed;
+top: 740px;
+right: 70px;
+}
+
+.meinrechteck3 {
+width: 40px;
+height: 80px;
+background: purple;
+
+
+position: fixed;
+top: 770px;
+right: 90px;
+}
+
+
+.meinrechteck:after {
+    content: 'huhu!';
+    padding-left: 20px;
+    display: block;
+    color: white;
+    padinging: 20px;
+
+  }
+
+ul.vertical {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+
+}
+
+ul.vertical li {
+display: inline-block;
+padding: 10px;
+background: rgba(150, 200, 244, 0.9);
+
+}
+
+
+}
