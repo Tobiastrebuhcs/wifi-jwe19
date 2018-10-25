@@ -1,11 +1,17 @@
 :root {
   --screen-max: 1200px;
-  --base-font: 'Montserrat'
+  --base-font1: 'Montserrat', sans-serif;
+  --base-font2: 'Pridi', 'Times New Roman', serif;
+
+  --footer-link-color: #fff;
+
+  --font-color-light: #999;
+  --grey-dark: #525252;
+  --grey: #696969;
 }
 
-
 @font-face {
-  font-family: ('Montserrat');
+  font-family: 'Montserrat';
   src: url(../fonts/Montserrat-Regular.ttf);
   font-weight: normal;
 }
@@ -20,19 +26,26 @@
   font-family: 'Montserrat';
   src: url(../fonts/Montserrat-Light.ttf);
   font-weight: lighter;
-
-  }
-
-  html, body {
-    margin: 0;
-  }
-
-  body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 100%
-  }
 }
 
+@font-face {
+  font-family: 'Pridi';
+  src: url(../fonts/Pridi-Light.ttf);
+  font-weight: lighter;
+}
+
+html, body {
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: 100%;
+  background: orange;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
 
 html * {
   box-sizing: border-box;
@@ -58,21 +71,64 @@ header .inner-wrapper {
   position: relative;
   max-width: var(--screen-max);
   margin: 0 auto;
-  background: red;
 
+}
+
+footer .inner-wrapper {
+  position: relative;
+  max-width: var(--screen-max);
+  margin: 0 auto;
 }
 
 header h1 {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: green;
+
 }
 
 main {
   background: lightgreen;
+  flex: 1;
 }
 
 footer {
-  background: lightgrey;
+  background: var(--grey-dark);
+  font-family: 'Pridi';
+  font-size: 100%;
+}
+
+footer a {
+  color: var(--footer-link-color);
+  font-family: var(--base-font2);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer-top {
+  display: flex;
+
+}
+
+footer .footer-left {
+  background: var(--grey-dark);
+  flex: 1;
+}
+
+footer .footer-right {
+  background: var(--grey-dark);
+  flex: 1;
+  text-align: right;
+}
+
+footer .footer-bottom {
+  display: flex;
+  color: var(--grey);
+  background: var(--grey-dark);
 }
