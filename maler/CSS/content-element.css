@@ -1,0 +1,20 @@
+section.content-element {
+  display: block;
+  background: purple;
+  position: relative;
+
+}
+
+.content-element .teaser {
+  position: relative;
+
+  background: red;
+
+  background-size: cover;
+  height: 35;
+}
+
+.content-element .teaser p {
+  position: relative;
+  z-index: 10;
+}

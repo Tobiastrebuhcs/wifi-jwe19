@@ -36,6 +36,10 @@ html, body {
   margin: 0;
 }
 
+nav .navigation {
+  display: none;
+}
+
 body {
   font-family: 'Montserrat', 'sans-serif';
   font-size: 100%;
@@ -69,6 +73,7 @@ body {
   width: 9em;
   height: 5em;
   left: 10em;
+  text-align: block;
 }
 
 #logo-part-2 a {
@@ -104,6 +109,82 @@ header .inner-wrapper {
   margin: 0 auto;
 }
 
+main .blue_Part {
+  background: rgb(30, 100, 255);
+}
+
+main .Restauration {
+  position: relative;
+  max-width: var(--screen-max);
+  font-size: 35px;
+  margin: 0 auto;
+  color: white;
+}
+
+main .white_Background {
+  background: white;
+  padding: 200px;
+}
+
+main .main_text {
+  position: relative;
+  max-width: var(--screen-max);
+  margin: 0 auto;
+  color: white;
+  Padding-right: 60%
+}
+
+main .main_text_2 {
+  position: relative;
+  max-width: var(--screen-max);
+  margin: 0 auto;
+  background: white;
+}
+
+main .img150 {
+  position: relative;
+  width: 20%;
+  height: 20%;
+
+}
+
+main .Leistungs_Button {
+
+  background-color: lightblue;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  left: 50%;
+
+}
+
+main .h2 {
+font-size: 35px
+}
+
+#main_box {
+    border-top:2px solid #009933;
+    padding-bottom:75px;
+    
+    }
+
+    #main_left {
+    font-size:15px;
+    color:black;
+
+    }
+    #main_right {
+    font-size:15px;
+    color:black;
+
+   }
+
+
 footer .inner-wrapper {
   position: relative;
   max-width: var(--screen-max);
@@ -117,7 +198,7 @@ header h1 {
 }
 
 main {
-  background: lightgreen;
+  background: var(--grey-dark);
   flex: 1;
 }
 
