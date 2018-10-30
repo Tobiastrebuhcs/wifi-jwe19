@@ -1,47 +1,61 @@
 :root {
   --screen-max: 1200px;
-  --base-font1: 'Montserrat', sans-serif;
+  --base-font: 'Montserrat', sans-serif;
   --base-font2: 'Pridi', 'Times New Roman', serif;
-  --footer-link-color: #fff;
-  --font-color-light: #999;
+
+  --grey-light: #fefefe;
   --grey-dark: #525252;
   --grey: #696969;
+
+  --font-color-light: var(--grey-dark);
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url(../fonts/Montserrat-Regular.ttf);
-  font-weight: normal;
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url(../fonts/Montserrat-Bold.ttf);
-  font-weight: bold;
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Medium.ttf);
+    font-weight: 500;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url(../fonts/Montserrat-Light.ttf);
-  font-weight: lighter;
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-weight: bold;
 }
 
 @font-face {
-  font-family: 'Pridi';
-  src: url(../fonts/Pridi-Light.ttf);
-  font-weight: lighter;
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Light.ttf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'Pridi';
+    src: url(../fonts/Pridi-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Pridi';
+    src: url(../fonts/Pridi-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Pridi';
+    src: url(../fonts/Pridi-Light.ttf);
+    font-weight: lighter;
 }
 
 html, body {
   margin: 0;
 }
 
-nav .navigation {
-  display: none;
-}
-
 body {
-  font-family: 'Montserrat', 'sans-serif';
+  font-family: var(--base-font);
   font-size: 100%;
   background: orange;
   display: flex;
@@ -49,53 +63,70 @@ body {
   min-height: 100vh;
 }
 
+html * {
+  box-sizing: border-box;
+}
+
+.main-navigation {
+  display: none;
+}
+
 #logo {
   position: fixed;
   z-index: 100;
-  width: 5em;
-  height: 5em;
+  top: 0;
   left: 5em;
-  position: fixed;
+  width: 7em;
+  height: 7em;
 }
-
 #logo a {
   display: block;
   width: 100%;
   height: 100%;
-  background: var(--grey-dark) url('../img/logo_muthwill.svg') no-repeat;
-  background-size: contain;
+  background: var(--grey-dark) url('../img/logo_muthwill.svg') no-repeat center center;
+  background-size: 80%;
   text-indent: -9999em;
   overflow: hidden;
 }
 
 #logo-part-2 {
   position: absolute;
-  width: 9em;
-  height: 5em;
-  left: 10em;
-  text-align: block;
+  z-index: 100;
+  top: 0;
+  left: 12em;
+  width: 17em;
+  height: 7em;
 }
 
 #logo-part-2 a {
-  display: block;
+  display: flex;
   width: 100%;
   height: 100%;
   background-color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-size: 1.3rem;
+  line-height: 1em;
+  font-weight: 500;
+  color: var(--grey);
 }
 
-html * {
-  box-sizing: border-box;
+#logo-part-2 a span {
+  display: inline;
 }
 
-header {
+header#main-header {
   position: relative;
   width: 100%;
   height: 45vw;
-  background: lightblue;
+  background: lightgreen;
   overflow: hidden;
 }
 
-header img {
+header#main-header img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -103,113 +134,32 @@ header img {
   display: block;
 }
 
-header .inner-wrapper {
-  position: relative;
-  max-width: var(--screen-max);
-  margin: 0 auto;
-}
-
-main .blue_Part {
-  background: rgb(30, 100, 255);
-}
-
-main .Restauration {
-  position: relative;
-  max-width: var(--screen-max);
-  font-size: 35px;
-  margin: 0 auto;
-  color: white;
-}
-
-main .white_Background {
-  background: white;
-  padding: 200px;
-}
-
-main .main_text {
-  position: relative;
-  max-width: var(--screen-max);
-  margin: 0 auto;
-  color: white;
-  Padding-right: 60%
-}
-
-main .main_text_2 {
-  position: relative;
-  max-width: var(--screen-max);
-  margin: 0 auto;
-  background: white;
-}
-
-main .img150 {
-  position: relative;
-  width: 20%;
-  height: 20%;
-
-}
-
-main .Leistungs_Button {
-
-  background-color: lightblue;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 16px;
-  position: relative;
-  left: 50%;
-
-}
-
-main .h2 {
-font-size: 35px
-}
-
-#main_box {
-    border-top:2px solid #009933;
-    padding-bottom:75px;
-    
-    }
-
-    #main_left {
-    font-size:15px;
-    color:black;
-
-    }
-    #main_right {
-    font-size:15px;
-    color:black;
-
-   }
-
-
+header#main-header .inner-wrapper,
+.content-element .inner-wrapper,
 footer .inner-wrapper {
   position: relative;
   max-width: var(--screen-max);
   margin: 0 auto;
 }
 
-header h1 {
+header#main-header h1 {
   position: absolute;
-  bottom: 0;
   left: 0;
+  bottom: 0;
+  background: green;
 }
 
 main {
-  background: var(--grey-dark);
   flex: 1;
+  background: lightgrey;
 }
 
 footer {
   background: var(--grey-dark);
-  font-family: 'Pridi';
-  font-size: 100%;
 }
 
 footer a {
-  color: var(--footer-link-color);
+  color: var(--grey-light);
   font-family: var(--base-font2);
   text-decoration: none;
   text-transform: uppercase;
@@ -221,44 +171,51 @@ footer ul {
   padding: 0;
 }
 
+footer .footer-top {
+
+}
+
 footer .footer-left {
-  background: var(--grey-dark);
 }
 
 footer .footer-right {
-  background: var(--grey-dark);
 }
 
 footer .footer-bottom {
-  color: var(--grey);
-  background: var(--grey-dark);
+  color: var(--grey-light);
+  opacity: .15;
 }
 
-@media screen and (min-width: 480px) {}
+@media screen and (min-width: 480px) {
 
-@media screen and (min-width: 567px) {
+}
+
+
+@media screen and (min-width: 576px) {
+
   footer .footer-top {
     display: flex;
   }
 
   footer .footer-left,
   footer .footer-right {
-    flex: 1
+    flex: 1;
   }
 
   footer .footer-right {
     text-align: right;
   }
+
 }
 
 @media screen and (min-width: 768px) {
-  body {}
+
 }
 
 @media screen and (min-width: 992px) {
-  body {}
+
 }
 
 @media screen and (min-width: 1200px) {
-  body {}
+
 }
