@@ -1,64 +1,30 @@
-
 :root {
-  --screen-max: 1200px;
+  --screen-max: 900px;
   --base-font: 'Montserrat', sans-serif;
-
-   }
-
-   html {
-     font-family: var(--base-font);
-   }
-
-   @font-face {
-       font-family: 'Montserrat';
-       src: url(../fonts/Montserrat-Regular.ttf);
-       font-weight: normal;
- }
-
- header {
-   padding-top: 20px;
-   background: yellow;
-   max-width: 100%;
-   margin: none;
- }
-
-
-.main_navigation {
-display: flex;
-max-width: 60%;
 }
 
-ul {
-  list-style: none;
+html {
+  font-family: var(--base-font)
+}
+
+@font-face {
   font-family: 'Montserrat';
-
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
 }
 
- ul li {
-
-  float: left;
-  align: right;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  font-size: 20;
-
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-weight: bold;
 }
 
-ul li a {
-  text-decoration: none;
-  font-family: var(--base-font);
-}
+header {
+  padding-top: 20px;
+  background: yellow;
+  max-width: 100%;
+  margin: 0;
 
-.main-picture {
-  max-width: 99%;
-  max-height: 99%;
-
-}
-
-body   {
-background: lightgreen;
-margin: 0;
 
 }
 
@@ -66,11 +32,80 @@ header#main-header .inner-wrapper {
   position: relative;
   max-width: var(--screen-max);
   margin: 0 auto;
+  display: flex;
 }
 
-footer {
+.headerimage {
+  background-image: url("../grafik/goldengatebridge.jpg");
+  background-size: cover;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.headerimage-text {
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  display: block;
+  color: white;
+  padding-top: 60px;
+  font-size: 16px;
+  width: 600px;
+  height: 300px;
+}
+
+.main_navigation {}
+
+ul {
+  list-style: none;
+  font-family: 'Montserrat';
+}
+
+ul li {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+ul li a {
+  color: red;
+  text-decoration: none;
+  font-family: var(--base-font);
+  font-weight: bold;
+}
+
+body {
+  background: lightgreen;
+  margin: 0;
+}
+
+footer#main-footer {
   background: grey;
 }
+
+footer .main-footer-left {
+  float: left;
+  box-sizing: border-box;
+  border: 5px solid green;
+  color: white;
+  font-size: 15px;
+  display: block;
+}
+
+footer#main-footer .inner-wrapper-text {
+  position: relative;
+  max-width: var(--screen-max);
+  margin: 0 auto;
+}
+
+#my-journey {
+  text-align: center;
+}
+
+
 
 .disclaimer {
   display: block;
