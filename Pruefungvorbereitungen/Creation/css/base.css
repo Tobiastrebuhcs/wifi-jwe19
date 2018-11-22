@@ -82,6 +82,10 @@ body {
   margin: 0;
 }
 
+#myjourney .teaser-lake-powell {
+  display: inline-block;
+}
+
 footer#main-footer {
   background: grey;
 }
