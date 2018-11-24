@@ -1,0 +1,43 @@
+html {
+  font-family: "arial", sans-serif;
+}
+
+.header-img {
+  position: relative;
+
+}
+
+.header-img img {
+  width: 100%;
+  height: auto;
+
+}
+
+.header-text {
+  position: absolute;
+  color: white;
+  top: 30%;
+  left: 50%;
+  padding-right: 30px;
+
+
+}
+
+.header-button {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 90px;
+  border: 2px solid grey;
+  border-radius: 3px;
+  background-color: lightgrey;
+
+}
+
+.header-button a {
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "arial", sans-serif;
+  color: white;
+
+}

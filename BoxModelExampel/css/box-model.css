@@ -1,0 +1,34 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: lightblue;
+  flex-flow: column;
+
+}
+
+div.around {
+
+  width: 700px;
+  border: 15px solid green;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 60px;
+
+}
+
+div #boxmodelLink {
+display: inline;
+font-family: "arial";
+font-size: 150px;
+text-decoration: none;
+align-content: center;
+
+}
