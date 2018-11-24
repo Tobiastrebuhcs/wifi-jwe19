@@ -1,0 +1,162 @@
+:root {
+  --screen-max: 1200px;
+  --base-font: 'Montserrat', sans-serif;
+  }
+
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url(../Fonts/Montserrat/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+#navigation {
+  display: flex;
+  background-color: red;
+  width: 100%;
+}
+
+
+body {
+  font-family: var(--base-font);
+
+
+}
+
+#navigation {
+  display: flex;
+}
+
+
+.navigation-logo {
+  display: inline-block;
+  padding-left: 10px;
+  padding-top: 20px;
+
+
+}
+
+
+.main-nav ul li {
+  float: left;
+  display: inline-block;
+  padding: 5px;
+}
+
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+}
+
+nav.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+.header-img img {
+  width: 100%;
+  height: auto;
+}
+
+.header-img-text {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  right: 30%;
+  padding-right: 80px;
+  color: white;
+
+}
+
+.flag {
+  height:60px;
+  background-color: red;
+}
+
+.teaser  {
+
+  }
+
+.teaser-image {
+  float: left;
+  padding: 20px;
+
+}
+
+.teaser-image-text {
+  text-align: center;
+  width: 30%;
+
+}
+
+.clearfix{
+    content: "";
+    clear: both;
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-part-1 {
+  display: grid;
+  box-sizing: border-box;
+  width: 100%;
+  height: 300px;
+  background-color: #333;
+  grid-template-columns: 1fr 1fr;
+}
+
+.disclaimer {
+  box-sizing: border-box;
+  padding-left: 30px;
+  color: white;
+}
+
+.Links ul   {
+  list-style: none;
+
+}
+
+.Links ul li a {
+  color: white;
+}
+
+.Kontakt {
+  padding-left: 30px;
+  margin: 0 auto;
+}
+
+.Kontakt ul {
+  list-style: none;
+}
+
+.Kontakt ul {
+  color: white;
+}
+
+.footer-part-2 {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  float: right;
+}
