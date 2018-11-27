@@ -45,6 +45,10 @@ html * {
 
 }
 
+span {
+  color: red;
+}
+
 .headerimage {
   display: block;
   width: 100%;
@@ -140,18 +144,18 @@ main {
   padding-inline-start: 10px;
 }
 
-.footer {
-  position: relative;
-  background: #333;
-  height: 50px;
+footer {
 
 }
 
+.footer {
+  background: #333;
+  height: 50px;
+  }
+
 .footer-text {
-  position: absolute;
   color: white;
-
-
+  padding-top: 20px;
 }
 
 @media screen and (min-width: 1200px) {
