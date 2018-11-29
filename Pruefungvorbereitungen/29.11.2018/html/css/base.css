@@ -16,14 +16,8 @@
   --min-xlg: 1600px;
 }
 
-@font-face {
-  font-family: "Josefin", sans-serif;
-  src: url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700);
-}
-
 html {
-
-  font-family: "Josefin", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 #top {
@@ -46,13 +40,9 @@ html {
   max-width: 200px;
 }
 
-.menu {
+.menu {}
 
-}
-
-.menu ul {
-
-}
+.menu ul {}
 
 .menu ul li {
   display: inline;
@@ -65,22 +55,18 @@ html {
 }
 
 .headerimg {
-  width: 1200px;
+  
   margin: auto;
 }
 
 .headerimg img {
-  max-width: 1200px;
   width: 100%;
   height: auto;
-
-
 }
 
 main {
-max-width: 900px;
-margin: auto;
-
+  max-width: 900px;
+  margin: auto;
 }
 
 .maintext-heading {
@@ -98,19 +84,15 @@ footer {
   bottom: 0;
 }
 
-footer ul  {
+footer ul {
   list-style: none;
-
 }
 
-footer ul li {
-
-}
+footer ul li {}
 
 footer ul li a {
   color: white;
   text-decoration: none;
-
 }
 
 #footerpart-1 {
