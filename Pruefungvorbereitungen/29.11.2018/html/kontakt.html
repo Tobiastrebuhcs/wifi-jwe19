@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/base.css">
+    <title>Bakery</title>
+  </head>
+  <body>
+    <div id="top">
+      <div class="navigation">
+        <div class="logo">
+          <img src="img/Logo-placeholder.png" alt="Logo">
+        </div>
+        <nav>
+          <div class="menu">
+            <ul>
+              <li><a href="ueberuns.html">Über uns</a></li>
+              <li><a href="unserteam.html">Unser Team</a></li>
+              <li><a href="galerie.html">Galerie</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+      </div>
+    </div>
+
+
+    <header>
+      <div class="headerimg">
+        <img src="img/kontakt.jpg" alt="kontakt">
+      </div>
+    </header>
+
+    <main>
+      <form>
+
+    <fieldset>
+      <legend>Ihre persönlichen Daten</legend>
+    <p>
+      <label for="female">Frau</label>
+      <input type="radio" name="gender" id="female" value="female">
+
+      <label for="male">Mann</label>
+      <input type="radio" name="gender" id="male" value="male">
+    </p>
+
+    <p>
+      <label for="firstname">Vorname</label>
+      <input type="text" name="firstname" id="firstname" value="" placeholder="Vorname">
+    </p>
+    <p>
+      <label for="lastname">Nachname</label>
+      <input type="text" name="lastname" id="lastname" value="" placeholder="Nachname">
+    </p>
+    <p>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" value="" placeholder="yourmail@domain.at">
+    </p>
+    <p>
+      <label for="date">Datum</label>
+      <input type="date" name="date" id="date" value="" placeholder="Datum">
+    </p>
+
+  </fieldset>
+  <fieldset>
+
+    <p>
+      <label for="passwordId">Passwort</label>
+      <input type="password" name="password" id="passwordId" value="">
+    </p>
+
+    <p>
+        <label for="socks">Wie viele paar Socken kannst du gleichzeitig tragen (Einzelstücke angeben)?</label>
+        <input type="number" name="socks" id="socks" value="" min="4" max="30" step="2">
+    </p>
+
+    <p>
+      <label for="animalfriend">Welcher Typ Mensch bist du?</label>
+    </p>
+    <p>
+      <select id="animalfriend" name="animalfriend" multiple required tabindex="1">
+        <option value="katze123">Katzenmensch</option>
+        <option value="wauwau123">Hundemensch</option>
+        <option value="knabber123">Hamstermensch</option>
+        <option value="zwitscher123">Vogelmensch</option>
+      </select>
+    </p>
+    </fieldset>
+    <p>
+      <label for="notes"></label>
+      <textarea name="notes" id="notes" rows="8" cols="80"></textarea>
+    </p>
+
+    <p>
+        <label for="agb">AGB, ja ok!</label>
+        <input type="checkbox" name="agb" id="agb" value="ok" required>
+    </p>
+    <p>
+      <input type="submit" name="submit" id="submit" value="Jetzt absenden!">
+      <button type="button">Absenden?</button>
+      <input type="reset" name="reset" value="Alles weg?">
+    </p>
+
+  </form>
+
+    <footer>
+      <div id="footerpart-1">
+        <div class="footerkontakt">
+          <ul>
+            <li>Konditorei Bakery</li>
+            <li>Uferweg 10</li>
+            <li>1001 Wien</li>
+          </ul>
+        </div>
+
+        <div class="footernav">
+          <ul>
+            <li><a href="#">Über uns</a></li>
+            <li><a href="#">Unser Team</a></li>
+            <li><a href="#">Galerie</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Impressum</a></li>
+            <li><a href="#">Datenschutz und Cookies</a></li>
+
+          </ul>
+        </div>
+
+        <div class="footerphone">
+          <ul>
+            <li>+43 3423425434566</li>
+            <li>stammgast@bakery.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="footerpart-2">
+        2018 XXX
+      </div>
+    </footer>
+
+
+
+  </body>
+</html>

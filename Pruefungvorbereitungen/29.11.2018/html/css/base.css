@@ -1,0 +1,131 @@
+/*https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700*/
+/*var*/
+:root {
+  --brown: #D0B085;
+  --grey: #707070;
+  --white: #FFFFFF;
+  /*BUTTON VARIABLEN*/
+  --btn-border: solid var(--brown) 2px;
+  --btn-padding: 0.75em 1.2em 0.45em;
+  --btn-margin: 1em auto;
+  /* Costum Breakpoints*/
+  --min-xs: 480px;
+  --min-sm: 768px;
+  --min-md: 992px;
+  --min-lg: 1280px;
+  --min-xlg: 1600px;
+}
+
+@font-face {
+  font-family: "Josefin", sans-serif;
+  src: url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700);
+}
+
+html {
+
+  font-family: "Josefin", sans-serif;
+}
+
+#top {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.navigation {
+  position: relative;
+  max-width: 900px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 45% 1fr;
+  margin: 0 auto;
+}
+
+.logo img {
+  max-width: 200px;
+}
+
+.menu {
+
+}
+
+.menu ul {
+
+}
+
+.menu ul li {
+  display: inline;
+  padding: 0 20px;
+}
+
+.menu ul li a {
+  color: #707070;
+  text-decoration: none;
+}
+
+.headerimg {
+  width: 1200px;
+  margin: auto;
+}
+
+.headerimg img {
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+
+
+}
+
+main {
+max-width: 900px;
+margin: auto;
+
+}
+
+.maintext-heading {
+  text-align: center;
+}
+
+.maintext {
+  text-align: center;
+}
+
+footer {
+  max-width: 1200px;
+  margin: auto;
+  left: 0;
+  bottom: 0;
+}
+
+footer ul  {
+  list-style: none;
+
+}
+
+footer ul li {
+
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+
+}
+
+#footerpart-1 {
+  padding-top: 60px;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #D0B085
+}
+
+#footerpart-2 {
+  color: white;
+  box-sizing: border-box;
+  background-color: #707070;
+  text-align: center;
+}
